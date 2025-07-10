@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+/* BORDER-BOX DEL SITIO */
+* {
+    @include reset
+}
+body{
+    background-color: $negro;
+    color: white;
+    @include font;
+}
+/* HEADER */
+header{
+    h1{
+        text-align: center;
+        font-weight: bold;
+    }
+    section{
+        .menu{
+            background-color: $naranja;
+            font-weight: bolder;
+        }
+    }
+}
+/* MAIN */
+main{
+    h2{
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        align-items: center;
+        input{
+            width: 50%;
+            transition: 1s;
+            &:focus{
+                background-color: $templado;
+            }
+        }
+        button{
+            @include boton;
+        }
+    }
+    div{
+        .cartas{
+            @include cartas;
+            img{
+                @include medidas(100%, 500px)
+            }
+            .card{
+                button{
+                    @include boton;
+                }
+            }
+        }
+        .carrito{
+            @include boton;
+        }
+        .carritoflex{
+            @include carrito;
+        }
+    }
+}
+#volverArribaBton{
+    @include btonVolver;
+}

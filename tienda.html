@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Compra tus Juegos ya!</title>
+    <meta name="description" content="Sitio de ventas de juegos para consolas, aqui encontraras todo lo que busques, desde juegos para tu PC hasta juegos para consolas como Play Station 5 y Nintendo Switch.">
+    <meta name="keywords" content="Juegos, PC, PlayStation 5, Nintengo Swicht, Generos, Filtros, Descuentos, Ofertas.">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- SASS -->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- LIBRERIA -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Tu Tienda de juegos</h1>
+        <section class="bannerHeader">
+            <ul class="nav nav-pills nav-fill gap-2 p-1 small rounded-5 shadow-sm menu" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-success); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-selected="true">Inicio</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#pc" type="button" role="tab" aria-selected="false">PC</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#ps5" type="button" role="tab" aria-selected="false">PlayStation 5</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#nswitch" type="button" role="tab" aria-selected="false">Nintendo Switch</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" data-bs-target="#carrito" type="button" role="tab" aria-selected="false">Carrito</button>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <div class="tab-content p-3" id="pillTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab2">
+                <h2>Registrate</h2>
+                <p><strong>Bienvenido a mi tienda de juegos.</strong><br>Registrate para mantenerte al tanto de descuentos exclusivos, promociones del dia y los ultimos ingresos de títulos nuevos.</p>
+                <form id="formRegistro">
+                    <input type="text" id="nuevoUsuario" placeholder="Usuario" required autocomplete="username">
+                    <input type="password" id="nuevaContraseña" placeholder="Contraseña" required autocomplete="current-password">
+                    <input type="email" id="nuevoEmail" placeholder="Email" required>
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="pc" role="tabpanel" aria-labelledby="profile-tab2">
+                <h2>Juegos para PC</h2>
+                <div class="filtros mb-4 mx-auto" style="max-width: 500px;">
+                    <input type="text" class="buscador form-control mb-2" placeholder="Buscar por nombre...">
+                    <select class="filtro-genero form-select">
+                        <option value="">Todos los géneros</option>
+                        <option value="Accion">Acción</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Estrategia">Estrategia</option>
+                        <option value="Deporte">Deporte</option>
+                        <option value="Simulacion">Simulación</option>
+                        <option value="Supervivencia">Supervivencia</option>
+                        <option value="Rol">Rol</option>
+                    </select>
+                </div>
+                <div class="cartas">
+                    <div class="card" style="width: 18rem;" data-nombre="EA SPORTS FC 25" data-genero="Deporte">
+                        <img src="./img/pc/fifa25.png" class="card-img-top" alt="portada del juego Fifa 25">
+                        <div class="card-body">
+                            <h3 class="card-title">EA SPORTS FC 25</h3>
+                            <p class="card-text">La nueva entrega de la saga de fútbol de Electronic Arts, que ofrece mejoras en el gameplay, nuevos modos de juego y una experiencia más personalizada. Entre las novedades se destacan un modelo de IA mejorado, nuevas opciones tácticas, la introducción de la Carrera Femenina, y la posibilidad de jugar en equipos reducidos con amigos en varios modos.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Deporte y Simulacion</li>
+                            <li class="list-group-item">Precio: $80.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Ea Sport FC 25" data-precio="80000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="ELDEN RING" data-genero="Rol, Accion">
+                        <img src="./img/pc/eldenRing.png" class="card-img-top" alt="portada del juego Elden Ring">
+                        <div class="card-body">
+                            <h3 class="card-title">ELDEN RING</h3>
+                            <p class="card-text">Nuevo videojuego de FromSoftware y Bandai Namco. Ideado por Hidetaka Miyazaki y George R.R. Martin, el escritor de Canción de hielo y fuego, nos llevará a un mundo convulso, complejo y sangriento. En esta ocasión, el equipo de Dark Souls ha aumentado la escala del título, trasladando y depurando su conocida jugabilidad a una nueva dimensión. Personalización, armas, armaduras y objetos mágicos se darán la mano con una desafiante dificultad, jefes finales y criaturas horripilantes.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol, Aventura y Accion</li>
+                            <li class="list-group-item">Precio: $60.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Elden Ring" data-precio="60000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="GOD OF WAR RAGNAROK" data-genero="Accion, Aventura">
+                        <img src="./img/pc/godOfWar.png" class="card-img-top" alt="portada del juego God of War Ragnarok">
+                        <div class="card-body">
+                            <h3 class="card-title">GOD OF WAR RAGNAROK</h3>
+                            <p class="card-text">Secuela de God of War, el reinicio y a la vez secuela de los anteriores God of War para consolas PlayStation. Desarrollado por el prestigioso estudio Sony Santa Monica y con la dirección de Cory Barlog, encontraremos una nueva historia en la que Kratos deberá enfrentarse a diversos enemigos de inspiración nórdica. Explorando los mitos del Ragnarok, el apocalipsis que todo lo devorará según esta tradición del norte, la secuela se espera que llegue en 2021.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: $95.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="God of War Ragnarok" data-precio="95000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="GRAND THEFT AUTO V" data-genero="Accion, Aventura">
+                        <img src="./img/pc/gtaV.png" class="card-img-top" alt="portada del juego Gta 5">
+                        <div class="card-body">
+                            <h3 class="card-title">GRAND THEFT AUTO V</h3>
+                            <p class="card-text">Versión ampliamente mejorada del originalmente desarrollado por Rockstar North y lanzado por Rockstar Games. Esta versión de PC se lanzó en abril de 2015, aproximadamente un año y medio después de su debut en consolas de la generación anterior, y trajo consigo una serie de mejoras técnicas y nuevas características destinadas a aprovechar la capacidad de hardware más avanzada disponible en PC.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: $58.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Grand Theft Auto V" data-precio="58500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="HALF-LIFE 2" data-genero="Accion">
+                        <img src="./img/pc/half-life.png" class="card-img-top" alt="portada del juego Half-Life 2">
+                        <div class="card-body">
+                            <h3 class="card-title">HALF-LIFE 2</h3>
+                            <p class="card-text">Desarrollado y publicado por Valve Corporation, es un videojuego de disparos en primera persona lanzado en 2004. Como secuela del aclamado Half-Life, este título continúa la historia de Gordon Freeman, un físico teórico que se convierte en un improbable héroe en la lucha contra una ocupación alienígena en la Tierra. Disponible inicialmente para PC y posteriormente adaptado a otras plataformas como Xbox, PlayStation 3 y Xbox 360 dentro de la colección The Orange Box, Half-Life 2 es ampliamente reconocido por su innovadora jugabilidad, narrativa inmersiva y uso pionero de la física en el diseño de puzzles y combate.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Primera Persona</li>
+                            <li class="list-group-item">Precio: $25.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Half-Life 2" data-precio="25000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="SEKIRO: SHADOWS DIE TWICE" data-genero="Accion">
+                        <img src="./img/pc/sekiro.png" class="card-img-top" alt="portada del juego Sekiro: Shadows Die Twice">
+                        <div class="card-body">
+                            <h3 class="card-title">SEKIRO: SHADOWS DIE TWICE</h3>
+                            <p class="card-text">Juego de acción y rol con ambientación asiático-ninja y con los toques habituales del estudio hacedor de sagas como Bloodborne y Dark Souls. Dirigido por Hidetaka Miyazaki, creador de la saga Souls, nos invitará a rescatar a nuestro secuestrado maestro a través del uso de las más variadas armas asiáticas. Ambientado a finales de 1500, en la época Sengoku, el protagonista usará herramientas prostéticas, y habilidades ninja de sigilo y escalada. La exploración será mucho mayor que en pasados juegos del estudio, ofreciendo más contexto y posibilidades de juego.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion</li>
+                            <li class="list-group-item">Precio: $35.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Sekiro: Shadows Die Twice" data-precio="35500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="HE LAST OF US" data-genero="Accion, Aventura, Supervivencia">
+                        <img src="./img/pc/theLastOfUs.png" class="card-img-top" alt="portada del juego The Last of Us">
+                        <div class="card-body">
+                            <h3 class="card-title">THE LAST OF US</h3>
+                            <p class="card-text">Una aventura de acción desarrollada por Naughty Dog y publicada por Sony Computer Entertainment para PlayStation 4. La obra maestra protagonizada por Joel y Ellie en su versión mejorada para PS4, con gráficos a 1080p y 60fps, todos los DLC, incluida la expansión Left Behind, así como algunos extras interesantes, como audiocomentarios con el director y los actores del juego.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Aventura y Supervivencia</li>
+                            <li class="list-group-item">Precio: $55.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="The Last of Us" data-precio="55000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="ARK: SURVIVAL ASCENDED" data-genero="Accion, Aventura, Supervivencia">
+                        <img src="./img/pc/ark.png" class="card-img-top" alt="portada del juego Ark: Survival Ascended">
+                        <div class="card-body">
+                            <h3 class="card-title">ARK: SURVIVAL ASCENDED</h3>
+                            <p class="card-text">Videojuego de acción y supervivencia con dinosaurios de Studio Wildcard permitiendo a los usuarios disfrutar de entornos más realidades y criaturas recreados con un mayor lujo de detalle."Estás listo para formar una tribu, domesticar y criar cientos de especies de dinosaurios y otras criaturas primitivas, explorar, crear, construir y luchar hasta la cima de la cadena alimentaria? Un nuevo mundo espera"</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Aventura y Supervivencia</li>
+                            <li class="list-group-item">Precio: $62.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Ark: Survival Ascended" data-precio="62000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="MINDSEYE" data-genero="Accion">
+                        <img src="./img/pc/mindsEye.png" class="card-img-top" alt="portada del juego MindsEye">
+                        <div class="card-body">
+                            <h3 class="card-title">MINDSEYE</h3>
+                            <p class="card-text">Thriller narrativo de acción y aventura que se ambienta, en un futuro cercano, en el territorio ficticio de Americana. Bajo la batuta del legendario director Leslie Benzies (Grand Theft Auto), MindsEye buscar ofrecer al público secuencias de vídeo espectaculares, persecuciones intensas, entornos llenos de vida y combates explosivos en el rol de Jacob Díaz, un antiguo soldado con un misterioso implante neuronal que ha perdido la memoria y está sufriendo flashbacks. "Afronta una serie de peligrosas misiones encubiertas para desvelar los secretos de tu pasado, todo ello en un mundo bajo la constante amenaza de la inteligencia artificial, experimentos con nuevas tecnologías, espionaje industrial, corrupción política y un ejército descontrolado".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Shooter</li>
+                            <li class="list-group-item">Precio: $69.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="MindsEye" data-precio="69500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="METAL GEAR SOLID DELTA: SNAKE EATER" data-genero="Accion">
+                        <img src="./img/pc/metalGearSolid.png" class="card-img-top" alt="portada del juego Metal Gear Solid Delta">
+                        <div class="card-body">
+                            <h3 class="card-title">METAL GEAR SOLID DELTA: SNAKE EATER</h3>
+                            <p class="card-text">"La pura experiencia del original, desarrollada y más inmersiva que nunca". Metal Gear Solid A: Snake Eater es un remake de MGS 3: Snake Eater con el que Konami garantiza traer a una nueva generación de jugadores la misma historia y mismo mundo apasionante que creo Hideo Kojima para PlayStation 2 en 2004. Una experiencia definitiva de acción, sigilo y superveniencia con gráficos de vanguardia y audio en 3D.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Sigilo y Shooter</li>
+                            <li class="list-group-item">Precio: $75.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Metal Gear Solid Delta" data-precio="75500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="JURASSIC WORLD EVOLUTION 3" data-genero="Estrategia, Simulacion">
+                        <img src="./img/pc/jurrasicWorld.png" class="card-img-top" alt="portada del juego Jurassic World Evolution 3">
+                        <div class="card-body">
+                            <h3 class="card-title">JURASSIC WORLD EVOLUTION 3</h3>
+                            <p class="card-text">Otra vez al mando de la construcción y gestión de tu propio mundo jurásico, teniendo que ayudar a la vida a abrirse camino sintetizando, criando y cuidando especies prehistóricas, más de 80 en esta ocasión. Con 75 de ellas podrás gestionar, criar y cuidar familias enteras durante generaciones.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Estrategia y Gestion</li>
+                            <li class="list-group-item">Precio: $80.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Jurassic World Evolution 3" data-precio="80000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="THE ELDER SCROLLS IV: OBLIVION" data-genero="Rol, Accion">
+                        <img src="./img/pc/elderScroll.png" class="card-img-top" alt="portada del juego The Elder Scrolls 4">
+                        <div class="card-body">
+                            <h3 class="card-title">THE ELDER SCROLLS IV: OBLIVION</h3>
+                            <p class="card-text">20 años después el muy querido RPG de acción y fantasía de Bethesda en una edición que cuenta con gráficos modernos y un gameplay mejorado, todo lo necesario para explorar el vasto paisaje de Cyrodiil como nunca antes lo habíamos hecho y descubrir un universo lleno de historias cautivadoras y personajes inolvidables. ¿Preparado para dominar el arte de la espada, lanzar hechizos poderosos y luchar para salvar Tamriel de la invasión daédrica?</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol y Accion RPG</li>
+                            <li class="list-group-item">Precio: $45.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="The Elder Scrolls 4" data-precio="45000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="THE BLOOD OF DAWNWALKER" data-genero="Rol, Accion">
+                        <img src="./img/pc/theBloodofDawnwalker.png" class="card-img-top" alt="portada del juego The Blood of Dawnwalker">
+                        <div class="card-body">
+                            <h3 class="card-title">THE BLOOD OF DAWNWALKER</h3>
+                            <p class="card-text">RPG de acción y fantasía oscura de mundo abierto triple-a firmado por Rebel Wolves, un equipo de desarrollo de reciente formación liderado por veteranos de CD Projekt RED (The Witcher 3: Wild Hunt, Cyberpunk 2077). El objetivo de sus autores es ofrecer un videojuego en el que los jugadores se sientan a gusto sumergiéndose y disfrutando de sus historias, y para ellos nos invitan a jugar como Coen, un joven convertido en un Dawnwalker: mitad humano, mitad vampiro, que camina eternamente entre el mundo del día y el reino de la noche. "Lucha por tu humanidad o abraza los poderes malditos para salvar a tu familia. Cualquiera que sea tu elección, la pregunta sigue siendo: ¿vale tu alma las vidas de quienes amas?".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol y Accion RPG</li>
+                            <li class="list-group-item">Precio: $90.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="The Blood of Dawnwalker" data-precio="90000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="ARCHEAGE: CHRONICLES" data-genero="Rol, Accion">
+                        <img src="./img/pc/archeAge.png" class="card-img-top" alt="portada del juego ArcheAge: Chronicles">
+                        <div class="card-body">
+                            <h3 class="card-title">ARCHEAGE: CHRONICLES</h3>
+                            <p class="card-text">RPG de fantasía online donde hemos de adentrarnos en Auroria, un mundo amplio y vibrante con un rico trasfondo y combates llenos de acción que prometen ser muy emocionantes. XLGAMES busca brindarnos una experiencia absorbente que robará los corazones de quienes lo jueguen, ya sean aventureros principiantes o con experiencia.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol, Accion RPG y Multijugador Online</li>
+                            <li class="list-group-item">Precio: $43.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="ArcheAge: Chronicles" data-precio="43500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="EA SPORTS MADDEN NFL 26" data-genero="Deporte">
+                        <img src="./img/pc/futbolAmericano.png" class="card-img-top" alt="portada del juego Ea Sports Madden NFL 26">
+                        <div class="card-body">
+                            <h3 class="card-title">EA SPORTS MADDEN NFL 26</h3>
+                            <p class="card-text">Simulador de fútbol americano número uno del mercado que uno más regresa con el objetivo de llevar su experiencia de juego a un número nivel gracias a años de seguimiento de la máxima competición de este deporte. Por el momento no tenemos detalles sobre sus novedades, pero llegará a PC, PS5 y Xbox Series X|S.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Deportes, Futbol Americano</li>
+                            <li class="list-group-item">Precio: $86.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Ea Sports Madden NFL 26" data-precio="86500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="THE OUTER WORLDS 2" data-genero="Rol, Accion">
+                        <img src="./img/pc/outerWorlds2.png" class="card-img-top" alt="portada del juego The Outer Worlds 2">
+                        <div class="card-body">
+                            <h3 class="card-title">THE OUTER WORLDS 2</h3>
+                            <p class="card-text">RPG de ciencia ficción en primera persona creado por Obsidian Entertainment. Sus creadores prometen una aventura repleta de acción con una nueva tripulación, nuevas armas y nuevos enemigos en una nueva colonia. "En tu papel de audaz (y seguramente de buen ver) agente del Consejo de Administración Terráqueo, tendrás que descubrir el origen de unas devastadoras fisuras que amenazan con destruir a la humanidad al completo. Tu investigación te conducirá a Arcadia, lugar de origen del acelerador supralumínico, donde el destino de la colonia, y, en definitiva, de toda la galaxia, dependerá de las decisiones que tomes".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol y Accion RPG</li>
+                            <li class="list-group-item">Precio: $99.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="The Outer Worlds 2" data-precio="99500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="GEARS OF WAR: RELOADED" data-genero="Accion">
+                        <img src="./img/pc/gearsOfWar.png" class="card-img-top" alt="portada del juego Gears of War: Reloaded">
+                        <div class="card-body">
+                            <h3 class="card-title">GEARS OF WAR: RELOADED</h3>
+                            <p class="card-text">Promete ser la forma definitiva de experimentar el juego que lo comenzó todo en 2025, trayendo de vuelta el aclamado shooter en tercera persona con resolución 4K, soporte para 120 FPS y la mejor experiencia multijugador con progreso y juego cruzado en todas las plataformas, incluyendo PlayStation 5.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Shooter</li>
+                            <li class="list-group-item">Precio: $89.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Gears of War: Reloaded" data-precio="89500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="BORDERLANDS 4" data-genero="Accion">
+                        <img src="./img/pc/borderlands4.png" class="card-img-top" alt="portada del juego Borderlands 4">
+                        <div class="card-body">
+                            <h3 class="card-title">BORDERLANDS 4</h3>
+                            <p class="card-text">"Descubre si tienes lo que hay que tener para pasar a la historia como un legendario Buscacámaras mientras buscas tesoros alienígenas secretos y destruyes todo lo que encuentres a tu paso". Borderlands 4 se presenta como un looter-shooter caótico, repleto de millones de armas, atroces enemigos y la acción cooperativa más intensa. Juega como uno de nuestros cuatro nuevos buscacámaras más chungos y escápate de un misterioso planeta oculto.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Primera persona y Shooter</li>
+                            <li class="list-group-item">Precio: $110.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Borderlands 4" data-precio="110000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="DIGIMON STORY TIME STRANGER" data-genero="Rol">
+                        <img src="./img/pc/digimon.png" class="card-img-top" alt="portada del juego Digimon Story Time Stranger">
+                        <div class="card-body">
+                            <h3 class="card-title">DIGIMON STORY TIME STRANGER</h3>
+                            <p class="card-text">RPG con elementos de doma de monstruos que explora el profundo vínculo que une a los humanos y los Digimon en una historia épica que desvela el misterio detrás del colapso del mundo. El videojuego promete embarcarnos en una aventura que no llevará por el mundo humano y el Mundo Digital y donde debemos conseguir y criar un grupo diverso de Digimon con los que pelear en combates por turnos.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Anime, Rol y Combate por turnos</li>
+                            <li class="list-group-item">Precio: $100.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Digimon Story Time Stranger" data-precio="100000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="RESIDENT EVIL 9: REQUIEM" data-genero="Accion, Supervivencia">
+                        <img src="./img/pc/residentEvil.png" class="card-img-top" alt="portada del juego Resident Evil 9: Requiem">
+                        <div class="card-body">
+                            <h3 class="card-title">RESIDENT EVIL 9: REQUIEM</h3>
+                            <p class="card-text">Novena entrega principal de la saga de terror y supervivencia de Capcom del que promete ser el videojuego más inmersivo hasta la fecha, llevándonos de vuelta a la emblemática Raccoon City, el hogar del desastre biológico que sacudió el mundo, combinando aspectos profundamente aterradores del horror psicológico con la acción trepidante que los fans de la franquicia conocen y adoran.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Survival horror</li>
+                            <li class="list-group-item">Precio: $130.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Resident Evil 9: Requiem" data-precio="130000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="RED DEAD REDEMPTION 2" data-genero="Accion, Aventura">
+                        <img src="./img/pc/redDeadRedemption2.png" class="card-img-top" alt="portada del juego Red Dead Redemption 2">
+                        <div class="card-body">
+                            <h3 class="card-title">RED DEAD REDEMPTION 2</h3>
+                            <p class="card-text">Videojuego de mundo abierto ambientado en el corazón de América en el año 1899 y desarrollado por Rockstar, creadores de GTA V y Red Dead Redemption entre otros premiados títulos de perfil sandbox. La historia de Arthur Morgan, (no Nate Harlow héroe de Red Dead Revolver, ni tampoco John Marston, el protagonista del Redemption original) es una aventura western con una extraordinaria atmósfera y ambientación muy cuidada y centrada en la naturaleza que, además de modo individual de juego, también presenta multijugador centrado en seguir la senda de GTA Online.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: $80.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Red Dead Redemption 2" data-precio="80000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="DOOM ETERNAL" data-genero="Accion">
+                        <img src="./img/pc/doom.png" class="card-img-top" alt="portada del juego Doom Eternal">
+                        <div class="card-body">
+                            <h3 class="card-title">DOOM ETERNAL</h3>
+                            <p class="card-text">Secuela directa del galardonado Doom (2016) desarrollado por id Software, donde se busca ofrecer la mejor combinación de velocidad y potencia de fuego, dando todo un salto adelante en el mundo del combate en primera persona en avance continuo. En DOOM Eternal el jugador debe tomar el papel del Asesino de la Muerte (DOOM Slayer) y regresar para vengarse de las fuerzas del infierno en una entrega donde hay nuevos demonios y clásicos así como armas y habilidades potentes y novedosas. DOOM Eternal nos lleva a luchar por diferentes dimensiones.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Primera Persona</li>
+                            <li class="list-group-item">Precio: $45.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Doom Eternal" data-precio="45000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="SUBNAUTICA 2" data-genero="Accion, Supervivencia">
+                        <img src="./img/pc/subnautica2.png" class="card-img-top" alt="portada del juego Subnautica 2">
+                        <div class="card-body">
+                            <h3 class="card-title">SUBNAUTICA 2</h3>
+                            <p class="card-text">Videojuego de aventura y supervivencia en un mundo oceánico alienígena. Frente al lanzamiento original de Unknown Worlds Entertainment, esta segunda entrega nos invita a disfrutar de viaje y una historia completamente nueva en un mundo lejano. Sin embargo, algo parece ir mal, la IA de la nave insiste en que continúes con la misión, pero este mundo parece ser demasiado peligroso para la vida humana, a menos que cambies lo que significa ser humano. "¿Qué criaturas, inteligentes o no, esperan tu llegada?".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Supervivencia</li>
+                            <li class="list-group-item">Precio: $65.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Subnautica 2" data-precio="65000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="SID MEIER'S CIVILIZATION 7" data-genero="Estrategia, Simulacion">
+                        <img src="./img/pc/civilizacion.png" class="card-img-top" alt="portada del juego Sid Meier's Civilization 7">
+                        <div class="card-body">
+                            <h3 class="card-title">SID MEIER'S CIVILIZATION 7</h3>
+                            <p class="card-text">Juego de estrategia 4X desarrollado por el legendario equipo de Firaxis Games, creadores de las franquicias Civilization y XCOM, donde, como es habitual, se desafía a los jugadores a construir el mayor imperio que el mundo haya conocido jamás. "Gobierna como uno de los muchos líderes legendarios de la historia. Establece tu civilización, construye ciudades y maravillas arquitectónicas para expandir tu territorio, conquista o coopera con civilizaciones rivales en pos de la prosperidad y explora los confines del mundo desconocido. ¿Construirás un imperio que resista el paso del tiempo?"</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Estrategia, Simulacion</li>
+                            <li class="list-group-item">Precio: $75.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Sid Meier's Civilization 7" data-precio="75000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="ps5" role="tabpanel" aria-labelledby="contact-tab2">
+                <h2>Juegos para PlayStation 5</h2>
+                <div class="filtros mb-4 mx-auto" style="max-width: 500px;">
+                    <input type="text" class="buscador form-control mb-2" placeholder="Buscar por nombre...">
+                    <select class="filtro-genero form-select">
+                        <option value="">Todos los géneros</option>
+                        <option value="Accion">Acción</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Estrategia">Estrategia</option>
+                        <option value="Deporte">Deporte</option>
+                        <option value="Simulacion">Simulación</option>
+                        <option value="Supervivencia">Supervivencia</option>
+                        <option value="Rol">Rol</option>
+                    </select>
+                </div>
+                <div class="cartas">
+                    <div class="card" style="width: 18rem;" data-nombre="DEATH STRANDING 2: ON THE BEACH" data-genero="Accion, Aventura">
+                        <img src="./img/ps5/deathStranding2.png" class="card-img-top" alt="portada del juego Death Stranding 2: On The Beach">
+                        <div class="card-body">
+                            <h3 class="card-title">DEATH STRANDING 2: ON THE BEACH</h3>
+                            <p class="card-text">Videojuego de acción y aventura que nos embarca en una nueva y enigmática misión protagonizada por Sam Porter Bridges (Norman Reedus), esta vez acompañado por nuevos y viejos aliados, por un mundo repleto de enemigos sobrenaturales, obstáculos y una inquietante pregunta, ¿deberíamos haber conectado?, que garantiza una narrativa profunda y reflexiva como cabría esperar de un título creado por Kojima Productions.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: $90.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Death Stranding 2: On The Beach" data-precio="90000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="GRAND THEFT AUTO VI" data-genero="Accion, Aventura">
+                        <img src="./img/ps5/gta6.png" class="card-img-top" alt="portada del juego Grand Theft Auto 6">
+                        <div class="card-body">
+                            <h3 class="card-title">GRAND THEFT AUTO VI</h3>
+                            <p class="card-text">Videojuego de acción en mundo abierto que busca dar continuidad una década más a la muy exitosa saga desarrollada y editada por Rockstar Games, haciéndonos viajar hasta el estado de Leonida, una versión ficticia de Florida que incluye la ya conocida por los jugadores de PS2 y Xbox Vice City, inspirada en Miami, donde disfrutaremos de una historia protagonizada por Lucia y Jason, una especie de Bonnie & Clyde del siglo XXI; todo en una producción de enorme factura técnica en la que una vez más habrá mucha libertad de movimiento.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: $150.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Grand Theft Auto 6" data-precio="150000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="GHOST OF YOTEI" data-genero="Accion, Aventura">
+                        <img src="./img/ps5/ghostOfYotei.png" class="card-img-top" alt="portada del juego Ghost of Yotei">
+                        <div class="card-body">
+                            <h3 class="card-title">GHOST OF YOTEI</h3>
+                            <p class="card-text">Secuela de Ghost of Tsushima, un videojuego de acción y aventura en mundo abierto por el Japón Feudal ambientado varios siglos después del lanzamiento original. Con un nuevo protagonista, una nueva historia por desarrollar y una nueva región de Japón por explorar, desde Sucker Punch Productions y PlayStation Studios buscan llevar a los jugadores a un viaje totalmente nuevo pero familiar protagonizada por Atsu en 1603 que transcurre en las tierras que rodean el monte Yotei, un imponente pico en el corazón de Ezo, una zona de Japón conocida como Hokkaido en la actualidad.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: $145.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Ghost of Yotei" data-precio="145000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="SAROS" data-genero="Accion, Aventura">
+                        <img src="./img/ps5/saros.png" class="card-img-top" alt="portada del juego Saros">
+                        <div class="card-body">
+                            <h3 class="card-title">SAROS</h3>
+                            <p class="card-text">Videojuego de acción, aventura y ciencia ficción con todo el ADN de Housemarque, creadores de Returnal. Ambientado en el mundo remoto que vive bajo la amenaza de un sinestro eclipse, los jugadores deberán tomar el control de Arjun Devraj, un poderoso ejecutor Soltari que busca respuestas en una colonia extraterrestre perdida, en una experiencia que cuenta con sistemas de progresión permanente y donde cada muerte reconfigura el mundo y ofrece nuevas mejoras para superar los desafíos.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: $85.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Saros" data-precio="85000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="PRAGMATA" data-genero="Accion">
+                        <img src="./img/ps5/pragmata.png" class="card-img-top" alt="portada del juego Pragmata">
+                        <div class="card-body">
+                            <h3 class="card-title">PRAGMATA</h3>
+                            <p class="card-text">Videojuego de acción, aventura y ciencia ficción con "un giro único de hackeo" ambientado un futuro cercano distópico, donde un evento catastrófico ha asolado la Tierra y los jugadores podrán vivir una experiencia inmersiva y visualmente impresionante, explorando temas como la libertad y la supervivencia en un entorno posapocalíptico como Hugh y su inseparable compañera androide, Diana. De momento hay pocos detalles más sobre su historia y gameplay.</P>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Primera Persona</li>
+                            <li class="list-group-item">Precio: $83.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Pragmata" data-precio="83500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="LOST SOUL ASIDE" data-genero="Accion">
+                        <img src="./img/ps5/lostSoulAside.png" class="card-img-top" alt="portada del juego Lost Soul Aside">
+                        <div class="card-body">
+                            <h3 class="card-title">LOST SOUL ASIDE</h3>
+                            <p class="card-text">Inspirado por Final Fantasy XV y Ninja Gaiden, Lost Soul Aside se presenta como un sofisticado RPG de acción y aventura para un solo jugador donde hemos de embarcarnos en una épica odisea para salvar a la hermana del protagonista y a toda la humanidad de los invasores dimensionales. "Encadena combos ultrarrápidos, aprende nuevas habilidades y mejora tus armas a medida que te enfrentas a enemigos formidables y jefes colosales en una experiencia de combate dinámica y rápida".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion RPG</li>
+                            <li class="list-group-item">Precio: $70.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Lost Soul Aside" data-precio="70000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="SILENT HILL: F" data-genero="Accion, Supervivencia">
+                        <img src="./img/ps5/silentHill.png" class="card-img-top" alt="portada del juego Silent Hill: F">
+                        <div class="card-body">
+                            <h3 class="card-title">SILENT HILL: F</h3>
+                            <p class="card-text">Expande el universo de terror con un thriller psicológico completamente nuevo ambientado en el Japón de la década de 1960, concretamente en una ciudad que acaba de ser envuelta en una repentina niebla que la transforma en una pesadilla perturbadora. Con un prometedor equipo creativo detrás, el videojuego llevará a los jugadores a explorar un mundo tan hermoso como aterrador como Hinako donde tendrán que enfrentarse a monstruos grotescos y resolver rompecabezas espeluznantes.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Survival Horror</li>
+                            <li class="list-group-item">Precio: $90.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Silent Hill: F" data-precio="90000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="HELL IS US" data-genero="Accion, Aventura">
+                        <img src="./img/ps5/hellIsUs.png" class="card-img-top" alt="portada del juego Hell is Us">
+                        <div class="card-body">
+                            <h3 class="card-title">HELL IS US</h3>
+                            <p class="card-text">Videojuego de acción y aventura en tercera persona que combina intensos combates cuerpo a cuerpo con la emoción de la exploración. Desarrollado por Rogue Factor (Necromunda: Underhive Wars), el título cuenta con la colaboración del director de arte de Deux Ex: Human Revolution y propone a los jugadores recorrer un mundo semiabierto y hostil, construido en Unreal Engine 5, en busca de respuestas al mismo tiempo que hay que enfrentar a misteriosas criaturas.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Aventura y Terror</li>
+                            <li class="list-group-item">Precio: $84.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Hell is Us" data-precio="84500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="CRIMSON DESERT" data-genero="Accion, Aventura">
+                        <img src="./img/ps5/crimsonDesert.png" class="card-img-top" alt="portada del juego Crimson Desert">
+                        <div class="card-body">
+                            <h3 class="card-title">CRIMSON DESERT</h3>
+                            <p class="card-text">Videojuego de acción y aventura en mundo abierto que narra una historia ambientada en el hermoso pero brutal continente de Pywel. Los jugadores deben ponerse en la piel de Kliff, líder de la Compañía Libre Melena Gris, para cumplir con su misión, luchar en intensos combates y descubrir los misterios que esconde este lugar.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: $140.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Crimson Desert" data-precio="140000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="THE RUN: GOT NEXT" data-genero="Deporte">
+                        <img src="./img/ps5/theRun.png" class="card-img-top" alt="portada del juego The Run: Got Next">
+                        <div class="card-body">
+                            <h3 class="card-title">THE RUN: GOT NEXT</h3>
+                            <p class="card-text">Un trepidante videojuego de baloncesto 3c3 en cancha completa que celebra toda la cultura del baloncesto callejero en todo el mundo. Con modo multijugador, los jugadores se encontrará una experiencia que recuerda a otra época, en en el buen sentido, donde poder realizar toda clase de trucos para alzarse como el rey del basket callejero.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Deporte, Baloncesto</li>
+                            <li class="list-group-item">Precio: $70.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="The Run: Got Next" data-precio="70500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="NINJA GAIDEN: RAGEBOUND" data-genero="Accion">
+                        <img src="./img/ps5/ninjaGaiden.png" class="card-img-top" alt="portada del juego Ninja Gaiden: Ragebound">
+                        <div class="card-body">
+                            <h3 class="card-title">NINJA GAIDEN: RAGEBOUND</h3>
+                            <p class="card-text">Videojuego de acción y plataformas en desplazamiento lateral de la legendaria saga, ahora desarrollado por The Game Kitchen (Blasphemous). Promete ser una aventura ninja espectacular, emocionante y desafiante que combine con éxito la tradición y la jugabilidad clásicas de la serie original desarrolladora por Tecmo con la profundidad e intensidad de los títulos modernos en 3D.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion</li>
+                            <li class="list-group-item">Precio: $97.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Ninja Gaiden: Ragebound" data-precio="97500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="WUCHANG: FALLEN FEATHERS" data-genero="Rol">
+                        <img src="./img/ps5/wuchangFallen.png" class="card-img-top" alt="portada del juego Wuchang: Fallen Feathers">
+                        <div class="card-body">
+                            <h3 class="card-title">WUCHANG: FALLEN FEATHERS</h3>
+                            <p class="card-text">RPG de acción estilo Souls ambientado en la tierra de Shu durante la oscura y tumultuosa dinastía Ming, repleta de facciones en guerra y asolada por una misteriosa enfermedad que engendra monstruos. En el videojuego somos Wuchang, una hábil guerrera pirata afectada por la amnesia, que debe navegar por las incertidumbres de su misterioso pasado mientras se ve aquejada por la horrible enfermedad de la Ornitropía.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol y Accion RPG</li>
+                            <li class="list-group-item">Precio: $69.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Wuchang: Fallen Feathers" data-precio="69000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="THE SEVEN DEADLY SINS: ORIGIN" data-genero="Rol">
+                        <img src="./img/ps5/theSevenDeadly.png" class="card-img-top" alt="portada del juego The Seven Deadly Sins: Origin">
+                        <div class="card-body">
+                            <h3 class="card-title">THE SEVEN DEADLY SINS: ORIGIN</h3>
+                            <p class="card-text">RPG de acción y anime basado en el universo de Nanatsu no Taizai (Los Siete Pecados Capitales en España), cuyo manga ha vendido ya más de 55 millones de copias, donde hemos de adoptar el papel del príncipe Tristán de Liones y explora el mundo abierto de Britania para restablecer el orden de un reino sumido en el caos a causa de la colisión del tiempo y el espacio</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol</li>
+                            <li class="list-group-item">Precio: $90.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="The Seven Deadly Sins: Origin" data-precio="90000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="RAINBOW SIX: SIEGE X" data-genero="Accion">
+                        <img src="./img/ps5/rainBowSix.png" class="card-img-top" alt="portada del juego Rainbow Six: Siege X">
+                        <div class="card-body">
+                            <h3 class="card-title">RAINBOW SIX: SIEGE X</h3>
+                            <p class="card-text">Se presenta como una evolución del videojuego de acción y disparos táctico de Ubisoft, "la transformación más grande en su historia". Sus desarrolladores prometen una renovación visual, una experiencia mejorada para los jugadores y cambios en la jugabilidad que profundizan su esencia táctica.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion Tactica y Primera Persona</li>
+                            <li class="list-group-item">Precio: $99.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Rainbow Six: Siege X" data-precio="99000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="INVINCIBLE VS" data-genero="Accion">
+                        <img src="./img/ps5/invincible.png" class="card-img-top" alt="portada del juego Invincible VS">
+                        <div class="card-body">
+                            <h3 class="card-title">INVINCIBLE VS</h3>
+                            <p class="card-text">Brutal videojuego de lucha de 3 contra 3 con superhéroes ambientado en el universo de Invencible, que quizás conozcas por su exitosa serie de animación para Prime Video, donde puedes luchar hasta la muerte con un equipo formado por los personajes más aclamados en ubicaciones icónicas. Desata combinaciones demoledoras a través de combates rápidos e inteligentes tácticas defensivas para dejar un rastro de sangre y destrucción a tu paso. Ejecuta violentos supermovimientos y ataques definitivos para hacer picadillo a tus rivales.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Lucha</li>
+                            <li class="list-group-item">Precio: $80.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Invincible VS" data-precio="80000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="PLANET OF LANA 2: CHILDREN OF THE LEAF" data-genero="Accion, Aventura">
+                        <img src="./img/ps5/planetOfLana.png" class="card-img-top" alt="portada del juego Planet of Lana II: Children of the Leaf">
+                        <div class="card-body">
+                            <h3 class="card-title">PLANET OF LANA 2: CHILDREN OF THE LEAF</h3>
+                            <p class="card-text">Una ambiciosa aventura cinemática de puzles ambientada en una saga de ciencia ficción épica que se expande a lo largo de los siglos y las galaxias que duplica el tamaño y alcance del videojuego original. Con mecánicas nuevas y mejoradas para sus protagonistas, así como habilidades completamente nuevas para controlar a las criaturas y robots a su alrededor, prepárate para adentrarte en un épico viaje en Lana y Mui, su inseparable acompañante, tendrán que resolver nuevos rompecabezas, enfrentar sus propios demonios y revelar los secretos más oscuros del planeta, mientras una nueva amenaza pone a prueba su vínculo inquebrantable. "No importa si eres un héroe veterano o un nuevo aventurero, todo el mundo podrá disfrutar de Novo y del nuevo misterio ancestral que emerge de sus profundidades", prometen sus responsables.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Aventura y Puzle</li>
+                            <li class="list-group-item">Precio: $70.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Planet of Lana II: Children of the Leaf" data-precio="70000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="RESONANCE: A PLAGUE TALE LEGACY" data-genero="Accion, Aventura">
+                        <img src="./img/ps5/resonanceAplagueTale.png" class="card-img-top" alt="portada del juego Resonance: A Plague Tale Legacy">
+                        <div class="card-body">
+                            <h3 class="card-title">RESONANCE: A PLAGUE TALE LEGACY</h3>
+                            <p class="card-text">Expande el universo de A Plague Tale con una historia original ambientada 15 años antes de los eventos de A Plague Tale: Requiem, que como jugador podrás conocer en un videojuego más centrado que nunca en la acción y aventura. Desde Asobo Studio nos invitan a zambullirnos en el pasado de Sophia y viajar con ella a la Isla del Minotauro, burlar a enemigos letales, descubrir secretos antiguos y enfrentar a la criatura en el corazón de una maldición devastadora. "Con una espada en una mano y luz en la otra, Sophia se sumergirá en el mito de la mácula hasta comprender por qué resuena tan profundamente con ella".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: $110.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Resonance: A Plague Tale Legacy" data-precio="110000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="PAINKILLER" data-genero="Accion">
+                        <img src="./img/ps5/painkiller.png" class="card-img-top" alt="portada del juego Painkiller">
+                        <div class="card-body">
+                            <h3 class="card-title">PAINKILLER</h3>
+                            <p class="card-text">Una reimaginación moderna de la saga de acción-shooter en primera persona, que apuesta por la inclusión de un cooperativo online para hasta tres jugadores y la opción de jugar sin conexión inviando a los jugadores a luchar contra hordas de demonios y temibles titanes en detallados entornos góticos. "Tus transgresiones contra el Cielo te condenan al Purgatorio, pero la Voz del Creador te ofrece la oportunidad de redimirte. Tendrás que unirte a sus otros campeones para detener al ángel caído Azazel, que se prepara para enviar sus ejércitos diabólicos a la Tierra. Lucha contra hordas de enemigos, demonios con poderes singulares y los tres monstruosos hijos de Azazel: los nefilim".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Primera persona</li>
+                            <li class="list-group-item">Precio: $89.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Painkiller" data-precio="89000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="FERA: THE SUNDERED TRIBES" data-genero="Accion">
+                        <img src="./img/ps5/fera.png" class="card-img-top" alt="portada del juego Fera: The Sundered Tribes">
+                        <div class="card-body">
+                            <h3 class="card-title">FERA: THE SUNDERED TRIBES</h3>
+                            <p class="card-text">Se presenta como una mezcla cautivadora de RPG de acción de caza de monstruos con construcción de aldeas y gestión de tribus en un mundo postapocalíptico único, lleno de magia indomable y antiguos secretos. Armado con un gancho místico y alas ágiles de planeador, como jugador lideraremos a una tribu en su esfuerzo por derribar a las gigantescas bestias que los aterroriza.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion RPG</li>
+                            <li class="list-group-item">Precio: $93.500</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Fera: The Sundered Tribes" data-precio="93500">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="CODE VIOLET" data-genero="Accion">
+                        <img src="./img/ps5/codeViolet.png" class="card-img-top" alt="portada del juego Code Violet">
+                        <div class="card-body">
+                            <h3 class="card-title">CODE VIOLET</h3>
+                            <p class="card-text">Videojuego de acción-shooter y terror donde somos Violet Sinclair, una chica rescatada del pasado que debe desentrañar los misterios del Complejo de Bioingeniería de Aion mientras evita, se esconde o lucha contra las criaturas que lo han invadido en una historia de ciencia ficción y viajes en el tiempo.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Primera Persona</li>
+                            <li class="list-group-item">Precio: $96.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Code Violet" data-precio="96000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="007 FIRST LIGHT" data-genero="Accion">
+                        <img src="./img/ps5/007.png" class="card-img-top" alt="portada del juego 007 First Light">
+                        <div class="card-body">
+                            <h3 class="card-title">007 FIRST LIGHT</h3>
+                            <p class="card-text">Se presenta como un trepidante videojuego de acción, aventura y espías creado por el equipo de IO Interactive (conocidos por Hitman), donde hemos de seguir a un joven, ingenioso a la par que temerario, James Bond durante su etapa como recluta del programa de entrenamiento del MI6. En otras palabras, es una historia de origen de la creación de Ian Fleming en la que habrá tiempo para emprender misiones en ubicaciones imponentes, ponerse al volante de vehículos emblemáticos y embarcarse en un viaje cinematográfico mientras se persigue a un agente rebelde que siempre va un paso por delante. Sus autores prometen, además, un videojuego donde se podrá optar por el sigilo o la fuerza bruta, luchando a puñetazos o con armas de fuego, usando artilugios para infiltrarse o marcándose un farol con los guardias.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Shooter</li>
+                            <li class="list-group-item">Precio: $70.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="007 First Light" data-precio="70000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="ARC RAIDERS" data-genero="Accion">
+                        <img src="./img/ps5/arcRaiders.png" class="card-img-top" alt="portada del juego ARC Raiders">
+                        <div class="card-body">
+                            <h3 class="card-title">ARC RAIDERS</h3>
+                            <p class="card-text">Shooter free-to-play cooperativo en tercera persona en el que el jugador y su escuadrón han de unir fuerzas para resistir el asedio de ARC, una amenaza mecanizada y despiadada proveniente del espacio. El videojuego se encuentra firmado por Embark Studios, un equipo de desarrollo nórdico conformado por veteranos de EA y DICE con créditos en la saga Battlefield.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Shooter</li>
+                            <li class="list-group-item">Precio: $65.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="ARC Raiders" data-precio="65000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="CITIZEN SLEEPER 2: STARWARD VECTOR" data-genero="Rol">
+                        <img src="./img/ps5/citizen.png" class="card-img-top" alt="portada del juego Citizen Sleeper 2: Starward Vector">
+                        <div class="card-body">
+                            <h3 class="card-title">CITIZEN SLEEPER 2: STARWARD VECTOR</h3>
+                            <p class="card-text">Videojuego de rol centrado en la historia protagonizado un androide fugado con un cuerpo maltrecho, una recompensa por tu cabeza y cero recuerdos que promete llevar a los jugadores a un lugar nuevo, esta vez con la ayuda de una nave destartalada con su propia tripulación. "Ambas necesitarán que las guíes por una crisis que afecta a todo el sistema".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol</li>
+                            <li class="list-group-item">Precio: $55.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Citizen Sleeper 2: Starward Vector" data-precio="55000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="STYX: BLADES OF GREED" data-genero="Accion">
+                        <img src="./img/ps5/styx.png" class="card-img-top" alt="portada del juego Styx: Blades of Greed">
+                        <div class="card-body">
+                            <h3 class="card-title">STYX: BLADES OF GREED</h3>
+                            <p class="card-text">Videojuego de acción y sigilo donde volvemos a ser Styx, un goblin astuto con un humor mordaz que ha dominado el arte de no ser visto. Nuestro objetivo en esta aventura es conseguir cuarzo, el recurso más valioso (y peligroso) en un mundo al borde de la guerra entre elfos, humanos y orcos. Sus desarrolladores avanzan un título que perfecciona la fórmula de sus dos predecesores, haciendo de la libertad y la creatividad el foco de la experiencia de juego. "Explora enormes entornos verticales mientras dominas nuevas herramientas y habilidades. Ya sea que acabes de conocer a Styx o seas un fan de toda la vida, ¡nunca había sido tan divertido ser codicioso!".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Sigilo</li>
+                            <li class="list-group-item">Precio: $65.000</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" data-nombre="Styx: Blades of Greed" data-precio="65000">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nswitch" role="tabpanel" aria-labelledby="contact-tab2">
+                <h2>Juegos para Nintendo Switch</h2>
+                <div class="filtros mb-4 mx-auto" style="max-width: 500px;">
+                    <input type="text" class="buscador form-control mb-2" placeholder="Buscar por nombre...">
+                    <select class="filtro-genero form-select">
+                        <option value="">Todos los géneros</option>
+                        <option value="Accion">Acción</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Estrategia">Estrategia</option>
+                        <option value="Deporte">Deporte</option>
+                        <option value="Simulacion">Simulación</option>
+                        <option value="Supervivencia">Supervivencia</option>
+                        <option value="Rol">Rol</option>
+                    </select>
+                </div>
+                <div class="cartas">
+                    <div class="card" style="width: 18rem;" data-nombre="I WAS A TEENAGE EXOCOLONIST" data-genero="Estrategia">
+                        <img src="./img/nSwitch/iWasaTeenageExocolonist.png" class="card-img-top" alt="portada del juego I Was A Teenage Exocolonist">
+                        <div class="card-body">
+                            <h3 class="card-title">I WAS A TEENAGE EXOCOLONIST</h3>
+                            <p class="card-text">RPG narrativo con batallas con cartas que plantea al jugador pasar sus años de adolescencia en un planeta alienígena, donde explorar, crecer y enamorarse. Las decisiones que tome y las habilidades que desarrolle durante ese tiempo determinarán el curso de su vida, y también la supervivencia de su colonia en una historia de exploración y descubrimiento.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Estrategia y Cartas</li>
+                            <li class="list-group-item">Precio: USD$24.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="I Was A Teenage Exocolonist" data-precio="24.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="CULT OF THE LAMB" data-genero="Accion, Aventura">
+                        <img src="./img/nSwitch/cultOfLamb.png" class="card-img-top" alt="portada del juego Cult of the Lamb">
+                        <div class="card-body">
+                            <h3 class="card-title">CULT OF THE LAMB</h3>
+                            <p class="card-text">Videojuego de acción y aventura donde los jugadores toman el rol de un cordero poseído que ha sido salvado de la muerte por un siniestro extraño y ha de devolver el favor ahora formando una comunidad que siga ciegamente su palabra. Así, el videojuego editado por Devolver Digital invita a los usuarios a crear su propia secta en una tierra de profetas, aventurándose en regiones diversas y misteriosas para construir una leal comunidad de adoradores de los bosques.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: USD$29.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Cult of the Lamb" data-precio="29.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="THYMESIA" data-genero="Accion">
+                        <img src="./img/nSwitch/thymesia.png" class="card-img-top" alt="portada del juego Thymesia">
+                        <div class="card-body">
+                            <h3 class="card-title">THYMESIA</h3>
+                            <p class="card-text">RPG de acción con un combate rápido y un complejo sistema de plagas como armas en el que se recibe la misión de desentrañar los misterios que acechan en un reino donde la muerte campa a sus anchas. Para hacerlo, se ha de tomar el control de Corvus, un misterioso ser capaz de apoderarse de las enfermedades enemigas y usarlas como armas contra sus adversarios. Solo podrá salvar el reino si recupera sus recuerdos perdidos, algo complicando teniendo en cuenta que cada vez que se sumerge en intento por reconstruir la verdad, solo halla más secretos.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion RPG</li>
+                            <li class="list-group-item">Precio: USD$26.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Thymesia" data-precio="26.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="FANTASY LIFE" data-genero="Estrategia">
+                        <img src="./img/nSwitch/fantasyLife.png" class="card-img-top" alt="portada del     juego FANTASY LIFE">
+                        <div class="card-body">
+                            <h3 class="card-title">FANTASY LIFE</h3>
+                            <p class="card-text">Emprende una vida fantástica en una isla en ruinas, y embárcate en una gran aventura que te llevará al pasado en FANTASY LIFE i: The Girl Who Steals Time. En este videojuego los jugadores pueden desarrollar la isla creando todo tipo de objetos, emprendiendo misiones y combatiendo a diestro y siniestro, e incluso viajar en el tiempo hasta el pasado para desentrañar secretos y alterar el curso de la historia.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Estrategia</li>
+                            <li class="list-group-item">Precio: USD$34.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="FANTASY LIFE" data-precio="34.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="WARHAMMER 40.000: BOLTGUN" data-genero="Accion">
+                        <img src="./img/nSwitch/warhammer.png" class="card-img-top" alt="portada del juego W40K: Boltgun">
+                        <div class="card-body">
+                            <h3 class="card-title">WARHAMMER 40.000: BOLTGUN</h3>
+                            <p class="card-text">Videojuego de acción y disparos en primera persona que invita a la jugadores a experimentar el homenaje definitivo a los shooters retro en una propuesta que mezcla el estilo visual con una mecánica moderna y fluida de FPS. Sus responsables invitan a jugar como un curtido Marine Espacial en una peligrosa misión a través de la galaxia para enfrentarse a los Marines Especiales del Caos y los Daemons del Caos. Un gran arsenal de fuego, combates viscerales, un gameplay con gran movilidad y litros de sangre esperan a quienes se aventuren en él.</P>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Primera Persona</li>
+                            <li class="list-group-item">Precio: USD$54.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="W40K: Boltgun" data-precio="54.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="LEYENDAS POKEMON: Z-A" data-genero="Rol">
+                        <img src="./img/nSwitch/pokemonLeyendas.png" class="card-img-top" alt="portada del juego Leyendas Pokémon: Z-A">
+                        <div class="card-body">
+                            <h3 class="card-title">LEYENDAS POKEMON: Z-A</h3>
+                            <p class="card-text">"Hay una nueva aventura esperándote en Ciudad Luminalia, donde está en marcha un plan de desarrollo urbanístico que la convertirá en un lugar perfecto para humanos y Pokémon". Así se presenta Leyendas Pokémon: Z-A, un videojuego de la saga de Game Freak para Nintendo Switch.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Anime y Rol</li>
+                            <li class="list-group-item">Precio: USD$79.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Leyendas Pokémon: Z-A" data-precio="79.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="FIGMENT 2: CREED VALLEY" data-genero="Accion, Aventura">
+                        <img src="./img/nSwitch/figment.png" class="card-img-top" alt="portada del juego Figment 2: Creed Valley">
+                        <div class="card-body">
+                            <h3 class="card-title">FIGMENT 2: CREED VALLEY</h3>
+                            <p class="card-text">Videojuego de acción y aventura ambientado en la mente humana y no una cualquiera, sino una donde las pesadillas están sembrando el caos y han invadido tierras otrora pacíficas. El jugador ha de solucionar rompecabezas y luchar en combates musicales a través de entornos únicos y cambiantes. Figment 2: Creed Valley se basa en las experiencias emocionales que nos afectan a todos, proponiendo hacer frente, solo o en cooperativo local, al estrés, la angustia y el miedo a la oscuridad en un universo musical y surrealista.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: USD$29.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Figment 2: Creed Valley" data-precio="29.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="METROID PRIME 4: BEYOND" data-genero="Accion">
+                        <img src="./img/nSwitch/metroid.png" class="card-img-top" alt="portada del juego Metroid Prime 4: Beyond">
+                        <div class="card-body">
+                            <h3 class="card-title">METROID PRIME 4: BEYOND</h3>
+                            <p class="card-text">Videojuego de acción-shooter y ciencia ficción donde una vez más nos ponemos en la piel de Samus Aran, transportada de forma inesperada al planeta Viewros. Durante su exploración del planeta en busca de respuestas, Samus recibe las habilidades psíquicas, unos misteriosos poderes ancestrales que le permiten controlar la trayectoria de sus disparos, manipular mecanismos y abrir puertas. "Pero ¿por qué ha recibido Samus estos poderes? ¿Y que le deparará el destino? Los hilos que se entrelazan más allá del tiempo y del espacio empezarán a tejer una nueva historia".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Primera Persona</li>
+                            <li class="list-group-item">Precio: USD$69.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Metroid Prime 4: Beyond" data-precio="69.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="SONIC RACING: CROSSWORLDS" data-genero="Deporte">
+                        <img src="./img/nSwitch/sonic.png" class="card-img-top" alt="portada del juego Sonic Racing: CrossWorlds">
+                        <div class="card-body">
+                            <h3 class="card-title">SONIC RACING: CROSSWORLDS</h3>
+                            <p class="card-text">Videojuego de carreras por tierra, mar, aire, espacio y tiempo protagonizado por el erizo azul de SEGA y sus compañeros de aventura. Los jugadores se teletransportarán a través de los Rings de travesía a nuevas dimensiones, donde les aguardan sorpresas en cada giro y curva, y podrán crear el vehículo definitivo que mejor se adapte a su estilo de conducción, desbloquear artilugios para ganar ventaja y usar objetos potenciadores para alzarte con la victoria. "Acelera hacia la victoria en solitario o en equipo en una gran variedad de modos locales y en línea, y compite contra jugadores de todo el mundo"</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Conduccion</li>
+                            <li class="list-group-item">Precio: USD$39.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Sonic Racing: CrossWorlds" data-precio="39.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="TONY HAWK'S PRO SKATER 3+4" data-genero="Deporte">
+                        <img src="./img/nSwitch/tonyHawks.png" class="card-img-top" alt="portada del juego Tony Hawk's Pro Skater 3 and 4">
+                        <div class="card-body">
+                            <h3 class="card-title">TONY HAWK'S PRO SKATER 3+4</h3>
+                            <p class="card-text">Promete traer de vuelta todo lo que nos flipaba en su día de la franquicia, pero ahora con más skaters, parques nuevos, trucos aún más bestiales, una banda sonora que hará temblar nuestros altavoces y un montón de contenido nuevo. "Corre a avisar a tus colegas y desempolva esa tabla porque el skate vuelve más fuerte que nunca".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Deporte, Skate</li>
+                            <li class="list-group-item">Precio: USD$24.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Tony Hawk's Pro Skater 3 and 4" data-precio="24.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="INAZUMA ELEVEN: VICTORY ROAD" data-genero="Deporte">
+                        <img src="./img/nSwitch/inazumaEleven.png" class="card-img-top" alt="portada del juego Inazuma Eleven: Victory Road">
+                        <div class="card-body">
+                            <h3 class="card-title">INAZUMA ELEVEN: VICTORY ROAD</h3>
+                            <p class="card-text">Videojuego de fútbol y rol desarrollado y publicado por Level-5. La historia se desarrolla años después de la primera entrega en un mundo paralelo donde no llegaron a hacer acto de presencia los alienígenas. Estará protagonizada por Ryouhei Haizaki, Asuto Inamori y Yuuma Nosaka e incluirá entre sus novedades un brazalete, conocido como Eleven Band, capaz de convertir los pasos del jugador en la vida real en un impulso de las estadísticas de tu personaje en el juego.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Deporte y Accion RPG</li>
+                            <li class="list-group-item">Precio: USD$59.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Inazuma Eleven: Victory Road" data-precio="59.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="LEGO PARTY!" data-genero="Aventura">
+                        <img src="./img/nSwitch/lego.png" class="card-img-top" alt="portada del juego LEGO Party!">
+                        <div class="card-body">
+                            <h3 class="card-title">LEGO PARTY!</h3>
+                            <p class="card-text">Como su nombre indica, un Mario Party en el que cuatro jugadores deberán competir entre sí en zonas de desafíos de lo más locas y en 60 minijuegos con temática de algunos de los sets de LEGO más legendarios, como LEGO Piratas, LEGO Espacio exterior, LEGO NINJAGO. Desafía a jugadores cercanos o a distancia, personaliza tu personaje y compite en una amplia gama de minijuegos que te encantarán. Todo es fabuloso en este videojuego de LEGO donde vamos a poder poner a prueba nuestra vel</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Multijuegos, Aventura</li>
+                            <li class="list-group-item">Precio: USD$39.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="LEGO Party!" data-precio="39.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="SHUTEN ORDER" data-genero="Accion">
+                        <img src="./img/nSwitch/shutenOrder.png" class="card-img-top" alt="portada del juego Shuten Order">
+                        <div class="card-body">
+                            <h3 class="card-title">SHUTEN ORDER</h3>
+                            <p class="card-text">Título de aventuras multigénero que combina la emoción de un escape room donde resuelves acertijos y pruebas para encontrar la salida de habitaciones misteriosas, una aventura romántica centrada en construir conexiones profundas con tres heroínas, una novela visual donde hemos de alternar entre perspectivas de personajes para descubrir diferentes rutas de supervivencia, y un juego de acción cenital en 3D en el que debemos resolver acertijos mientras escapas de un grupo de peligrosos enemigos. SHUTEN ORDER incluye así mecánicas de acción, sigilo, y terror y una novela visual multiperspectiva. El videojuego ha sido creado gracias a la colaboración entre DMM GAMES y Too Kyo Games, liderado por Kazutaka Kodaka (conocido por la serie Danganronpa).</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion</li>
+                            <li class="list-group-item">Precio: USD$34.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Shuten Order" data-precio="34.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="ZELDA: BREATH OF THE WILD" data-genero="Accion, Aventura">
+                        <img src="./img/nSwitch/zelda.png" class="card-img-top" alt="portada del juego Zelda: Breath of the Wild">
+                        <div class="card-body">
+                            <h3 class="card-title">ZELDA: BREATH OF THE WILD</h3>
+                            <p class="card-text">El videojuego más grande en la historia de Nintendo. Esta es la carta de presentación de The Legend of Zelda: Breath of the Wild para Wii U y Switch, una épica aventura que lleva la acción de esta veterana franquicia a un gigantesco mundo abierto que podemos explorar con total libertad. ¡No hay límites! Link puede coger un caballo, o cualquier otra montura, y explorar la nueva Hyrule siguiendo el orden que desee el jugador, pues la historia ya no sigue un camino lineal.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: USD$59.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Zelda: Breath of the Wild" data-precio="59.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="SUPER MARIO ODYSSEY" data-genero="Accion">
+                        <img src="./img/nSwitch/superMarioOddyssey.png" class="card-img-top" alt="portada del juego Super Mario Odyssey">
+                        <div class="card-body">
+                            <h3 class="card-title">SUPER MARIO ODYSSEY</h3>
+                            <p class="card-text">Título, totalmente tridimensional o en 3D, se desarrolla en el planeta Tierra, ya que Mario deja el Reino Champiñón para embarcarse en un viaje por lugares misteriosos y vivir nuevas aventuras a bordo de una aeronave, demostrando el hábil manejo de su gorra, ya que gracias a ella Mario puede tomar el control de los enemigos. En el juego hay mucho plataformeo, secretos y sorpresas, pero también abundantes partes de acción y hasta pruebas que parecen puzles</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Plataforma</li>
+                            <li class="list-group-item">Precio: USD$49.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Super Mario Odyssey" data-precio="49.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="POKEMON ESCARLATA / PURPURA" data-genero="Rol">
+                        <img src="./img/nSwitch/pokemonE-P.png" class="card-img-top" alt="portada del     juego Pokémon Escarlata / Púrpura">
+                        <div class="card-body">
+                            <h3 class="card-title">POKEMON ESCARLATA / PURPURA</h3>
+                            <p class="card-text">Novena generación de la saga de Game Freak, proponiendo a los usuarios una vez más partir a explorar un vasto mundo en busca de monstruos a los que capturar y entrenar para llegar a ser el mejor. Los videojuegos se presenta como los primeros RPG de mundo abierto de la saga, permitiendo a los usuarios seguir disfrutando de los clásicos de siempre, como descubrir Pokémon, entrenarlos, intercambiarlos, combatir y formar tu equipo con ellos, pero también descubrir un nuevo nivel de inmersión en la aventura gracias a múltiples novedades.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol, Combate por Turnos</li>
+                            <li class="list-group-item">Precio: USD$54.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Pokémon Escarlata / Púrpura" data-precio="54.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="HOLLOW KNIGHT" data-genero="Accion, Aventura">
+                        <img src="./img/nSwitch/hollowKnight.png" class="card-img-top" alt="portada del juego Hollow Knight">
+                        <div class="card-body">
+                            <h3 class="card-title">HOLLOW KNIGHT</h3>
+                            <p class="card-text">Vistosa aventura de acción y plataformas en 2D ambientada en un lúgubre mundo de insectos, diseñado como si de una película de animación tradicional se tratase. El videojuego invita a explorar cavernas serpenteantes y ciudades antiquísimas lugar de más de 130 enemigos, incluidos una treintena de jefazos, a los que combatir con extraños poderes. ¿Preparado para forjar tu propio camino? Hollow Knight bien podría definirse como un auténtico juego metroidvania con la esencia Dark Souls... Divertido, épico, emocionante y duro.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: USD$29.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Hollow Knight" data-precio="29.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="SPLATOON 2" data-genero="Accion">
+                        <img src="./img/nSwitch/splaton2.png" class="card-img-top" alt="portada del juego Splatoon 2">
+                        <div class="card-body">
+                            <h3 class="card-title">SPLATOON 2</h3>
+                            <p class="card-text">Secuela del colorido videojuego de acción-shooter de Wii U, que apuesta por mejorar la formula con más características jugables, mapas y armas inéditas en su lanzamiento para Nintendo Switch. Así, el juego de Nintendo saca partido al control de movimiento del mando Pro del sistema y los Joy-Con permitiendo apuntar con ellos, además de contar con modo cooperativo local para cuatro jugadores de lo más alocado, y un multijugador online con chat de voz y SplatNet 2. Como su predecesor, Splatoon 2 se dotará de prendas, escenarios y otros objetos en sucesivas actualizaciones tras su lanzamiento.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion, Shooter</li>
+                            <li class="list-group-item">Precio: USD$49.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Splatoon 2" data-precio="49.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="FIRE EMBLEM: THREE HOUSES" data-genero="Estrategia">
+                        <img src="./img/nSwitch/fireEmblem.png" class="card-img-top" alt="portada del juego Fire Emblem: Three Houses">
+                        <div class="card-body">
+                            <h3 class="card-title">FIRE EMBLEM: THREE HOUSES</h3>
+                            <p class="card-text">La estrategia y el rol de Fire Emblem no pierde la oportunidad de estar en Nintendo Switch con Fire Emblem: Three Houses, un juego que supone el retorno de la franquicia a las plataformas domésticas de Nintendo ofreciendo, como es habitual, batallas por turnos en un mundo de fantasía medieval bajo el nombre de Fire Emblem: Three Houses. Un videojuego de Intelligent Systems que abraza las 3D sin perder su estética anime, y que apuesta además por nuevas mecánicas de exploración y rol, que prometen brindarnos una experiencia de juego más completa y emocionante.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Estrategia</li>
+                            <li class="list-group-item">Precio: USD$54.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Fire Emblem: Three Houses" data-precio="54.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="XENOBLADE CHRONICLES 3" data-genero="Rol">
+                        <img src="./img/nSwitch/xenoblade.png" class="card-img-top" alt="portada del juego Xenoblade Chronicles 3">
+                        <div class="card-body">
+                            <h3 class="card-title">XENOBLADE CHRONICLES 3</h3>
+                            <p class="card-text">Videojuego de rol y acción en mundo abierto desarrollado en exclusiva para Nintendo Switch que continúa la exitosa y muy querida saga JRPG de Monolith Soft. En la aventura los jugadores se ponen en la piel de Noah y Mio, atrapados en medio de las hostilidades que sacuden a las naciones rivales de Keves y Agnus, mientras recorren paisajes majestuosos, se enfrentan a bestias feroces y luchan para romper el ciclo de violencia sin fin que asola sus tierras.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Rol y Accion RPG</li>
+                            <li class="list-group-item">Precio: USD$54.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Xenoblade Chronicles 3" data-precio="54.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="DONKEY KONG BANANZA" data-genero="Accion, Aventura">
+                        <img src="./img/nSwitch/donkeyKong.png" class="card-img-top" alt="portada del juego Donkey Kong Bananza">
+                        <div class="card-body">
+                            <h3 class="card-title">DONKEY KONG BANANZA</h3>
+                            <p class="card-text">Videojuego de acción, aventura y plataformas en 3D donde los jugadores disfrutaremos de opciones inéditas hasta la fecha en la franquicia para explorar su mundo como DK. Pegaremos golpes y porrazos, escalaremos prácticamente cualquier cosa que se nos pongan por delante, arrancaremos y arrojaremos trozos enteros del terreno que nos rodea, etc. "Cuantas más cosas se hagan pedazos pegando puñetazos de impresión, más zonas habrán para explorar".</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Aventura</li>
+                            <li class="list-group-item">Precio: USD$59.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Donkey Kong Bananza" data-precio="59.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="DAEMON X MACHINA" data-genero="Accion">
+                        <img src="./img/nSwitch/daemon.png" class="card-img-top" alt="portada del juego Daemon X Machina">
+                        <div class="card-body">
+                            <h3 class="card-title">DAEMON X MACHINA</h3>
+                            <p class="card-text">Videojuego de acción mech (robots y mechas) para Nintendo Switch desarrollado por First Studio. Los jugadores pueden vestir su traje personalizable Arsenal en diversas misiones para acabar con el enemigo a toda costa. Además pueden elegir y personalizar su Arsenal con múltiples armas, sacar rédito de los enemigos caídos y cambiárselos sobre la marcha para adaptar su estrategia conforme a las cambiantes circunstancias que ofrece Daemon X Machina.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion</li>
+                            <li class="list-group-item">Precio: USD$54.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Daemon X Machina" data-precio="54.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="DRAG X DRIVE" data-genero="Deporte">
+                        <img src="./img/nSwitch/dragXdrive.png" class="card-img-top" alt="portada del juego Drag x Drive">
+                        <div class="card-body">
+                            <h3 class="card-title">DRAG X DRIVE</h3>
+                            <p class="card-text">Videojuego de baloncesto 3c3 en silla de ruedas donde los jugadores usarán ambos mandos Joy-Con 2 a modo de ratón para desplazarse de manera intuitiva, acelerar y realizar toda suerte de acrobacias, jugadas muy molonas y mates de impresión.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Deporte</li>
+                            <li class="list-group-item">Precio: USD$34.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Drag x Drive" data-precio="34.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-nombre="Super Smash Bros. Ultimate" data-genero="Accion">
+                        <img src="./img/nSwitch/superSmashBros.png" class="card-img-top" alt="portada del juego Super Smash Bros. Ultimate">
+                        <div class="card-body">
+                            <h3 class="card-title">SUPER SMASH BROS. ULTIMATE</h3>
+                            <p class="card-text">El reconocido director Masahiro Sakurai vuelve a la carga con una nuevo videojuego de la serie de lucha Super Smash Bros. con una premisa muy especial: Super Smash Bros. Ultimate incluye todos los personajes que alguna vez aparecieron en entregas pasadas, y también unos cuantos nuevos: Inkling (Splatoon) y Ridley (Metroid) entre otros.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Genero: Accion y Lucha</li>
+                            <li class="list-group-item">Precio: USD$59.99</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="submit" class="botonUsd" data-nombre="Super Smash Bros. Ultimate" data-precio="59.99">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="carrito" role="tabpanel" aria-labelledby="contact-tab2">
+                <h2>Carrito</h2>
+                <p id="usuario-logueado"></p>
+                <div class="carritoflex">
+                    <ul id="lista-carrito"></ul>
+                    <p id="total-carrito">Total: $0</p>
+                    <button class="carrito" id="comprar">Finalizar compra</button>
+                    <button class="carrito" id="vaciar-carrito">Vaciar carrito</button>
+                    <button class="carrito" id="cerrar-sesion">Cerrar sesión</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <button id="volverArribaBton" class="btn btn-success rounded-circle shadow" title="Volver arriba">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- JAVASCRIPT -->
+    <script src="js/tienda.js"></script>
+    <!-- SCRIPTS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+//------------> PALETA DE COLORES
+$naranja: #E67514;
+$negro: #212121;
+$verde: #06923E;
+$templado: #D3ECCD;
+//------------> ESTILO DE LETRA
+$letra: "Open Sans", sans-serif;
+//------------> MIXIN
+@mixin font {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 87.5;
+}
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin cartas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+@mixin medidas ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin boton{
+    max-width: fit-content;
+    padding: 4px;
+    transition: 1s;
+    &:hover{
+        background-color: $verde;
+        color: white;
+        border-color: $templado;
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
+}
+@mixin carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+@mixin btonVolver{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1050;
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
